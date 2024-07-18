@@ -99,7 +99,7 @@ print(df.dtypes)
 # plt.show()
 # from the above we can see that most of the sold products are from food,clothing and electronic category
 
-sales_procid=df.groupby(['Product_ID'],as_index=False)['Orders'].sum().sort_values(by='Orders',ascending=False).head(10)
-sns.barplot(x='Product_ID',y='Orders',data=sales_procid)
-sns.set(rc={'figure.figsize':(20,5)})
-plt.show()
+# sales_procid=df.groupby(['Product_ID'],as_index=False)['Orders'].sum().sort_values(by='Orders',ascending=False).head(10)
+# sns.barplot(x='Product_ID',y='Orders',data=sales_procid)
+# sns.set(rc={'figure.figsize':(20,5)})
+# plt.show()
