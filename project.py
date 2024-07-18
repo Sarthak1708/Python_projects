@@ -3,13 +3,15 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+# -------TO READ THE CSV FILE--------------------------
+
 df=pd.read_csv("Expanded_data_with_more_features.csv.zip")
 # print(df.head())
 
 # --------------TO CHECK COLUMNS INDEX--------------------
 # print(df.columns)
 
-# df.describe()
+# print(df.describe())
 
 # df.info()
 
@@ -79,20 +81,21 @@ df=pd.read_csv("Expanded_data_with_more_features.csv.zip")
 
 # ----------------------------TO PLOT PIE CHART OF ETHNIC GRP---------------------
 
-groupA=df.loc[(df['EthnicGroup'] == "group A")].count()
-groupB=df.loc[(df['EthnicGroup'] == "group B")].count()
-groupC=df.loc[(df['EthnicGroup'] == "group C")].count()
-groupD=df.loc[(df['EthnicGroup'] == "group D")].count()
-groupE=df.loc[(df['EthnicGroup'] == "group E")].count()
+# groupA=df.loc[(df['EthnicGroup'] == "group A")].count()
+# groupB=df.loc[(df['EthnicGroup'] == "group B")].count()
+# groupC=df.loc[(df['EthnicGroup'] == "group C")].count()
+# groupD=df.loc[(df['EthnicGroup'] == "group D")].count()
+# groupE=df.loc[(df['EthnicGroup'] == "group E")].count()
 
-l=["group A","group B","group C","group D","group E"]
-mlist=[groupA["EthnicGroup"],groupB["EthnicGroup"],groupC["EthnicGroup"],groupD["EthnicGroup"],groupE["EthnicGroup"],]
+# l=["group A","group B","group C","group D","group E"]
+# mlist=[groupA["EthnicGroup"],groupB["EthnicGroup"],groupC["EthnicGroup"],groupD["EthnicGroup"],groupE["EthnicGroup"],]
 
-print(mlist)
-plt.pie(mlist,labels=l,autopct="%1.2f%%")
-plt.title("Distribution of Ethnic group")
-plt.show()
+# print(mlist)
+# plt.pie(mlist,labels=l,autopct="%1.2f%%")
+# plt.title("Distribution of Ethnic group")
+# plt.show()
 
-ax=sns.countplot(data=df,x='EthnicGroup')
-ax.bar_label(ax.containers[0])
-plt.show()
+# ---------------------TO SHOW COUNT OF ETHNIC GRP------------------------
+# ax=sns.countplot(data=df,x='EthnicGroup')
+# ax.bar_label(ax.containers[0])
+# plt.show()
